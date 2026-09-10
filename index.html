@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matoshree Dental Clinic | Professional Dental Care</title>
+    <meta name="description" content="Matoshree Dental Clinic provides professional and patient-focused dental care.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- QRCode JS Library for dynamic UPI QR generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+    <div class="container nav">
+        <a href="#home" class="logo">
+            <span class="logo-icon">+</span>
+            <span>
+                <strong>Matoshree</strong>
+                <small>Dental Clinic</small>
+            </span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#contact">Contact</a>
+            <a href="#adminModal" class="admin-link-nav" id="openAdminBtn">Admin Portal</a>
+        </nav>
+
+        <a href="#appointment" class="nav-btn">Book Appointment</a>
+    </div>
+</header>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="badge">PROFESSIONAL DENTAL CARE</span>
+                <h1>A healthier smile <span>starts here.</span></h1>
+                <p>Comfortable, professional, and patient-focused dental care for you and your family at Matoshree Dental Clinic.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#appointment" class="btn btn-primary">Book Appointment →</a>
+                    <a href="#services" class="btn btn-secondary">Explore Services</a>
+                </div>
+
+                <div class="doctor-chip">
+                    <div class="doctor-mini">
+                        <div class="doctor-icon">DR</div>
+                        <div>
+                            <strong>Dr. Sandhya Kendre</strong>
+                            <span>B.D.S. (Nashik)</span>
+                        </div>
+                    </div>
+                    <div class="doctor-divider"></div>
+                    <div class="doctor-mini">
+                        <div class="doctor-icon">DR</div>
+                        <div>
+                            <strong>Dr. Balaji V. Kendre</strong>
+                            <span>M.D.S. (Nagpur)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="hero-circle"></div>
+                <div class="tooth">✦</div>
+                <div class="floating-card card-one">✓ Gentle Care</div>
+                <div class="floating-card card-two">★ Trusted Dental Care</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+        <div class="container two-column">
+            <div>
+                <span class="section-kicker">ABOUT OUR CLINIC</span>
+                <h2>Dentistry with care, comfort, and trust.</h2>
+            </div>
+            <div>
+                <p>Matoshree Dental Clinic is a premier dental practice managed by <strong>Dr. Sandhya Kendre, B.D.S. (Nashik)</strong> and <strong>Dr. Balaji V. Kendre, M.D.S. (Nagpur)</strong>.</p>
+                <p>Our goal is to provide comprehensive consultation, preventive care, and advanced treatments in a pristine, modern, and soothing environment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">OUR SERVICES</span>
+                    <h2>Complete dental care for your smile.</h2>
+                </div>
+                <p>Professional dental services tailored to your health and comfort.</p>
+            </div>
+
+            <div class="service-grid" id="serviceGrid">
+                <!-- Dynamically populated via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- DOCTORS SECTION -->
+    <section class="section doctors-section" id="doctors">
+        <div class="container">
+            <div class="section-heading doctor-heading">
+                <div>
+                    <span class="section-kicker">OUR DENTISTS</span>
+                    <h2>Meet the doctors behind Matoshree Dental Clinic.</h2>
+                </div>
+                <p>Professional dental guidance with a patient-first approach.</p>
+            </div>
+
+            <div class="doctors-grid">
+                <article class="doctor-profile">
+                    <div class="doctor-profile-image">
+                        <div class="doctor-initials">DS</div>
+                    </div>
+                    <div class="doctor-profile-content">
+                        <span class="doctor-role">DENTIST</span>
+                        <h3>Dr. Sandhya Kendre</h3>
+                        <h4>B.D.S. (Nashik)</h4>
+                        <p>Focused on attentive dental consultation, preventive care, and ensuring a painless experience.</p>
+                        <a href="#appointment" class="btn btn-primary">Book Consultation →</a>
+                    </div>
+                </article>
+
+                <article class="doctor-profile">
+                    <div class="doctor-profile-image">
+                        <div class="doctor-initials">DB</div>
+                    </div>
+                    <div class="doctor-profile-content">
+                        <span class="doctor-role">DENTIST</span>
+                        <h3>Dr. Balaji V. Kendre</h3>
+                        <h4>M.D.S. (Nagpur)</h4>
+                        <p>Dedicated to advanced dental care, oral surgery, and customized treatment plans.</p>
+                        <a href="#appointment" class="btn btn-primary">Book Consultation →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section why">
+        <div class="container">
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">WHY CHOOSE US</span>
+                    <h2>Your comfort comes first.</h2>
+                </div>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <strong>01</strong>
+                    <h3>Professional Care</h3>
+                    <p>Patient-focused dental consultation and advanced surgical care.</p>
+                </div>
+                <div class="why-card">
+                    <strong>02</strong>
+                    <h3>Comfortable Environment</h3>
+                    <p>A pristine, hygienic, and relaxing clinic atmosphere.</p>
+                </div>
+                <div class="why-card">
+                    <strong>03</strong>
+                    <h3>Personal Attention</h3>
+                    <p>Tailored treatment protocols adapted to individual patient requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- APPOINTMENT SECTION -->
+    <section class="section appointment" id="appointment">
+        <div class="container appointment-box">
+            <div>
+                <span class="section-kicker">APPOINTMENT BOOKING</span>
+                <h2>Ready to take care of your smile?</h2>
+                <p>Fill out your details below to select a service and reserve your appointment slot.</p>
+            </div>
+
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <input type="text" id="custName" placeholder="Your Full Name" required>
+                    <small class="error-msg" id="nameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <input type="tel" id="custPhone" placeholder="Mobile Number (10 digits)" required>
+                    <small class="error-msg" id="phoneError"></small>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="custEmail" placeholder="Email Address (Optional)">
+                </div>
+
+                <div class="form-group">
+                    <input type="date" id="custDate" required>
+                    <small class="error-msg" id="dateError"></small>
+                </div>
+
+                <div class="form-group">
+                    <select id="custService" required>
+                        <!-- Populated dynamic options -->
+                    </select>
+                    <small class="error-msg" id="serviceError"></small>
+                </div>
+
+                <div class="price-display-card" id="priceDisplayCard">
+                    <span>Consultation / Booking Fee:</span>
+                    <strong id="selectedPriceAmount">₹0</strong>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">Proceed to Payment →</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact" id="contact">
+        <div class="container contact-grid">
+            <div>
+                <span class="section-kicker">CONTACT US</span>
+                <h2>Visit Matoshree Dental Clinic.</h2>
+                <p>Have questions or need assistance? Reach out to our team directly.</p>
+            </div>
+
+            <div class="contact-card">
+                <div>
+                    <strong>Doctors</strong>
+                    <p>Dr. Sandhya Kendre (B.D.S.)<br>Dr. Balaji V. Kendre (M.D.S.)</p>
+                </div>
+                <div>
+                    <strong>Clinic Hotline & UPI ID</strong>
+                    <p id="contactPhoneDisplay">+91 94220 64602</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <div class="container footer">
+        <div>
+            <strong>Matoshree Dental Clinic</strong>
+            <p>Professional dental care with compassion.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#appointment">Appointment</a>
+        </div>
+        <p>© <span id="year"></span> Matoshree Dental Clinic. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- ================= PAYMENT MODAL ================= -->
+<div class="modal-overlay" id="paymentModal">
+    <div class="modal-card">
+        <button class="close-modal" id="closePaymentModal">&times;</button>
+        <h3>Scan & Pay via UPI</h3>
+        <p class="modal-subtitle">Use PhonePe, Google Pay, Paytm or any UPI app</p>
+        
+        <div class="payment-details-summary">
+            <div><span>Patient:</span> <strong id="payPatientName">-</strong></div>
+            <div><span>Service:</span> <strong id="payServiceName">-</strong></div>
+            <div><span>Amount Payable:</span> <strong class="text-teal" id="payAmount">-</strong></div>
+        </div>
+
+        <div class="qr-container">
+            <div id="qrcode"></div>
+            <p class="qr-hint">Scan with any UPI App or tap button below</p>
+        </div>
+
+        <a href="#" id="directUpiBtn" class="btn btn-secondary btn-full mb-15">Open in UPI App</a>
+
+        <div class="payment-actions">
+            <button class="btn btn-primary btn-full" id="confirmPaymentBtn">✓ Confirm & Generate Receipt</button>
+        </div>
+    </div>
+</div>
+
+<!-- ================= RECEIPT MODAL ================= -->
+<div class="modal-overlay" id="receiptModal">
+    <div class="modal-card receipt-card">
+        <button class="close-modal" id="closeReceiptModal">&times;</button>
+        <div class="receipt-header">
+            <div class="receipt-badge">Booking Confirmed</div>
+            <h2>Matoshree Dental Clinic</h2>
+            <p>Payment & Booking Receipt</p>
+        </div>
+
+        <div class="receipt-body" id="receiptContent">
+            <!-- Dynamic Receipt Text -->
+        </div>
+
+        <div class="receipt-footer">
+            <button class="btn btn-whatsapp btn-full" id="sendWhatsappBtn">
+                📱 Send Receipt to WhatsApp
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- ================= ADMIN LOGIN MODAL ================= -->
+<div class="modal-overlay" id="adminAuthModal">
+    <div class="modal-card auth-card">
+        <button class="close-modal" id="closeAuthModal">&times;</button>
+        <h3>Admin Authentication</h3>
+        <p>Enter administrative passkey to access system controls.</p>
+        <form id="adminLoginForm">
+            <input type="password" id="adminPassInput" placeholder="Enter Password (Default: 5525)" required>
+            <small class="error-msg" id="loginError"></small>
+            <button type="submit" class="btn btn-primary btn-full mt-10">Access Control Panel</button>
+        </form>
+    </div>
+</div>
+
+<!-- ================= ADMIN PANEL MODAL ================= -->
+<div class="modal-overlay" id="adminPanelModal">
+    <div class="modal-card admin-panel-card">
+        <div class="admin-header">
+            <div>
+                <h2>Admin Control Center</h2>
+                <small>Matoshree Dental Management System</small>
+            </div>
+            <button class="btn btn-danger btn-sm" id="adminLogoutBtn">Logout</button>
+        </div>
+
+        <div class="admin-tabs">
+            <button class="tab-btn active" data-tab="tabSettings">Settings & UPI</button>
+            <button class="tab-btn" data-tab="tabServices">Manage Services</button>
+            <button class="tab-btn" data-tab="tabBookings">Appointments & Receipts</button>
+        </div>
+
+        <div class="tab-content active" id="tabSettings">
+            <form id="settingsForm" class="admin-form">
+                <h4>System Contact & Payment Settings</h4>
+                <div class="form-group">
+                    <label for="adminPhoneInput">WhatsApp / Contact Mobile Number:</label>
+                    <input type="tel" id="adminPhoneInput" required>
+                </div>
+                <div class="form-group">
+                    <label for="adminUpiInput">UPI ID for Payment Collection:</label>
+                    <input type="text" id="adminUpiInput" required placeholder="e.g. 9422064602@upi">
+                </div>
+                <button type="submit" class="btn btn-primary">Save Settings</button>
+            </form>
+        </div>
+
+        <div class="tab-content" id="tabServices">
+            <h4>Add New Clinic Service</h4>
+            <form id="addServiceForm" class="admin-form grid-2">
+                <input type="text" id="newServiceIcon" placeholder="Icon Emoji (e.g. 🦷)" required>
+                <input type="text" id="newServiceName" placeholder="Service Name" required>
+                <input type="number" id="newServicePrice" placeholder="Price (₹)" required>
+                <input type="text" id="newServiceDesc" placeholder="Short Description" required>
+                <button type="submit" class="btn btn-primary span-2">+ Add Service</button>
+            </form>
+
+            <h4 class="mt-20">Existing Services</h4>
+            <div class="table-responsive">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Icon</th>
+                            <th>Service</th>
+                            <th>Fee</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="adminServicesTable">
+                        <!-- Populated dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="tab-content" id="tabBookings">
+            <h4>All Recorded Appointments</h4>
+            <div class="table-responsive">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Patient</th>
+                            <th>Mobile</th>
+                            <th>Date</th>
+                            <th>Service</th>
+                            <th>Paid</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="adminBookingsTable">
+                        <!-- Populated dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
